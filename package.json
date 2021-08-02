@@ -1,0 +1,11 @@
+{
+  "name": "login_app",
+  "version": "1.0.0",
+  "description": "Login app built in the AMII discipline",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Thiago Marinho",
+  "license": "ISC"
+}
