@@ -1,11 +1,14 @@
 const express = require("express");
 const router = express.Router();
 
+
 let db = require("./db");
 
+router.use(express.static("public"));
+
+
 router.get("/", (req, res) => {
-    // res.render("pages/home");
-    res.send("pagina de teste");
+    res.render("pages/home");
 });
 
 router.get("/about",(req,res)=>{
