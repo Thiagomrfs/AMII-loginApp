@@ -12,5 +12,5 @@ const address = 'localhost';
 app.use('/', routes);
 
 const server = app.listen(port, address, () => {
-    console.log('> server on');
+    console.log('> server on http://localhost:3000/');
 });

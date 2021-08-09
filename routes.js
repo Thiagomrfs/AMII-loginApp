@@ -12,11 +12,11 @@ router.get("/", (req, res) => {
 });
 
 router.get("/about",(req,res)=>{
-    res.send("Sobre");
+    res.render("pages/about");
 });
 
 router.get("/curriculo",(req,res)=>{
-    res.send("Meu currículo");
+    res.render("pages/curriculo");
 });
 
 router.get("/cadastro/insert",(req,res)=>{
