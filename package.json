@@ -1,17 +1,31 @@
 {
-  "name": "login_app",
-  "version": "1.0.0",
-  "description": "Login app built in the AMII discipline",
+  "name": "first-app",
+  "version": "0.1.0",
+  "description": "Aplicação base em node.js",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
-  "author": "Thiago Marinho",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wwagner33/first-app2.git"
+  },
+  "keywords": [
+    "node.js",
+    "express",
+    "ejs",
+    "express-ejs-layout"
+  ],
+  "author": "Wellington Wagner F. Sarmento",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/wwagner33/first-app2/issues"
+  },
+  "homepage": "https://github.com/wwagner33/first-app2#readme",
   "dependencies": {
     "ejs": "^3.1.6",
     "express": "^4.17.1",
-    "express-ejs-layouts": "^2.5.1",
-    "faker": "^5.5.3"
+    "express-ejs-layouts": "^2.5.1"
   }
 }

@@ -1,0 +1,21 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.show {
+    display:inline-flexbox;
+}
+
+.hidden {
+    display:none;
+}
+
+.jumbotron {
+    overflow-x: scroll;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+}
