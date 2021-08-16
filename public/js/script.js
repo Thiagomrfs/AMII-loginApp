@@ -87,9 +87,21 @@ function update(index,link){
 }
 
 function remove(index,link){
+    const http = new XMLHttpRequest();
 
-    // para ser feito
+    let data = {id:""}
 
+    http.open("POST", link, true); 
+
+    http.setRequestHeader('Content-Type','application/json');
+
+    data.id = index;
+
+    dataToSend = JSON.stringify(data); 
+
+    http.send(dataToSend);
+
+    document.location.reload();
 }
    
 

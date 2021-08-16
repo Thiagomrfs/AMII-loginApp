@@ -16,11 +16,11 @@ router.get('/cadastro',(req,res)=>{
 });
 
 router.post('/cadastro/remove',(req,res)=>{
-    let item =req.body.id;
+    let item = req.body.id;
 
-    users.splice(item,1);
-    console.log("Elementos cadastrados: ",users);
-    res.sendStatus(200);
+    users.splice(item, 1);
+
+    res.render('pages/cadastro', {users: users})
 });
 
 
