@@ -82,6 +82,7 @@ function update(index,link){
                 console.log(http.responseText);
             }
         }
+        document.location.reload();
     });  
 
 }
