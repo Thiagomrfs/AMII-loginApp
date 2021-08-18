@@ -1,5 +1,3 @@
-
-
 function update(index,link){
     let tds = document.querySelectorAll(`td[data-index-row='${index}']`);
     let spans = document.querySelectorAll(`td[data-index-row='${index}'] > span`);
