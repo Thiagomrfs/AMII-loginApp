@@ -16,8 +16,31 @@ body {
     overflow-x: scroll;
 }
 
+.jumbotron table {
+    margin-top: 2rem;
+}
+
 footer {
     position: fixed;
     bottom: 0;
     width: 100vw;
+}
+
+.add-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.add-form input {
+    margin-bottom: 1.5rem;
+}
+
+.add-form-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.add-form-buttons #add-form-submit {
+    margin-right: 1.5rem;
 }

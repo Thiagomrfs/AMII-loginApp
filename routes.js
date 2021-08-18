@@ -23,8 +23,6 @@ router.post('/cadastro/remove',(req,res)=>{
     res.render('pages/cadastro', {users: users})
 });
 
-
-
 router.post('/cadastro/update',(req,res)=>{
     users[req.body.id].name=req.body.name;
     users[req.body.id].email=req.body.email;
@@ -40,6 +38,14 @@ router.post('/cadastro/update',(req,res)=>{
 
 router.get('/cadastro/list',(req,res)=>{
     res.send("lista");
+});
+
+router.post('/cadastro/addUser',(req,res)=>{
+    console.log("Dados recebidos: ", req.body);
+
+    users.push(req.body);
+
+    res.sendStatus(200);
 });
 
 module.exports = router;

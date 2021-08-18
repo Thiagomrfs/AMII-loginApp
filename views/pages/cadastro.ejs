@@ -2,7 +2,29 @@
 
 <div class="jumbotron">
     <h2>Usuários Cadastrados</h2>
-    <p>Lista de usuários cadastrados no sistema.</p>            
+    <p>Lista de usuários cadastrados no sistema.</p>
+    <div class="add-form" class="hidden">
+        <label for="userName" class="hidden">Nome</label>
+        <input type="text" id="userName" placeholder="nome" class="hidden">
+        <label for="userName" class="hidden">Email</label>
+        <input type="text" id="userEmail" placeholder="email" class="hidden">
+        <label for="userName" class="hidden">Endereço</label>
+        <input type="text" id="userAddress" placeholder="endereço" class="hidden">
+        <label for="userName" class="hidden">Idade</label>
+        <input type="number" id="userAge" min="1" placeholder="1" class="hidden">
+        <label for="userName" class="hidden">Altura</label>
+        <input type="text" id="userHeight" placeholder="altura" class="hidden">
+        <label for="userName" class="hidden">Vota?</label>
+        <input type="text" id="userVote" placeholder="vota" class="hidden">
+    </div>
+    <div class="add-form-buttons" class="hidden">
+        <a href="#" onclick="addUser()" class="hidden" id="add-form-submit">Adicionar</a>
+        <a href="#" onclick="hideAddUserForm()" class="hidden" id="add-form-cancel">Cancelar</a>
+    </div>
+    <a href="#" onclick="showAddUserForm()" id="add-form-call">Adicionar novo usuário</a>
+
+
+
     <table class="table table-hover">
         <thead>
         <tr>
