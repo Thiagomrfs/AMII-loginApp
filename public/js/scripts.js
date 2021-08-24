@@ -41,8 +41,9 @@ function addUser() {
     data.address = document.querySelector("#userAddress").value;
     data.age = document.querySelector("#userAge").value;
     data.height = document.querySelector("#userHeight").value;
-    data.vote = document.querySelector("#userVote").value;
-    
+    data.vote = document.querySelector("#userVote").checked;
+    data.vote = data.vote.toString();
+
     for (const key in data) {
         if (data[key] == "") {
             document.location.reload();

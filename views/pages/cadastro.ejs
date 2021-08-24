@@ -6,16 +6,16 @@
     <div class="add-form" class="hidden">
         <label for="userName" class="hidden">Nome</label>
         <input type="text" id="userName" placeholder="nome" class="hidden">
-        <label for="userName" class="hidden">Email</label>
-        <input type="text" id="userEmail" placeholder="email" class="hidden">
-        <label for="userName" class="hidden">Endereço</label>
+        <label for="userEmail" class="hidden">Email</label>
+        <input type="email" id="userEmail" placeholder="email" class="hidden">
+        <label for="userAddress" class="hidden">Endereço</label>
         <input type="text" id="userAddress" placeholder="endereço" class="hidden">
-        <label for="userName" class="hidden">Idade</label>
+        <label for="userAge" class="hidden">Idade</label>
         <input type="number" id="userAge" min="1" placeholder="1" class="hidden">
-        <label for="userName" class="hidden">Altura</label>
-        <input type="text" id="userHeight" placeholder="altura" class="hidden">
-        <label for="userName" class="hidden">Vota?</label>
-        <input type="text" id="userVote" placeholder="vota" class="hidden">
+        <label for="userHeight" class="hidden">Altura (metros)</label>
+        <input type="number" id="userHeight" placeholder="altura" class="hidden" min="1" step="0.01">
+        <label for="userVote" class="hidden">Vota?</label>
+        <input type="checkbox" id="userVote" placeholder="vota" class="hidden">
     </div>
     <div class="add-form-buttons" class="hidden">
         <a href="#" onclick="addUser()" class="hidden" id="add-form-submit">Adicionar</a>
