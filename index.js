@@ -15,7 +15,7 @@ global.users =[
         address: "Rua prepexes, 123",
         email: "Thiago@thiago.com",
         age: 18,
-        height: 1.86,
+        height: "1.86m",
         vote: true
     },
     {
@@ -23,7 +23,7 @@ global.users =[
         address: "Rua pé de pé, 321",
         email: "Rodolfo@virtual.ufc.br",
         age: 59,
-        height:1.70,
+        height: "1.70m",
         vote:true
     },
     {
@@ -31,23 +31,23 @@ global.users =[
         address: "Rua, 525",
         email: "Val@disney.com",
         age: 32,
-        height: 1.70,
+        height: "1.70m",
         vote: true
     },
     {
         name: "Valdisney Sampaio Vieira",
         address: "Rua, 525",
         email: "Val@disney.com",
-        age: 32,
-        height: 1.70,
-        vote: true
+        age: 15,
+        height: "1.70m",
+        vote: false
     },
     {
         name: "Valdisney Silva Moreira",
         address: "Rua, 525",
         email: "Val@disney.com",
         age: 32,
-        height: 1.70,
+        height: "1.70m",
         vote: true
     },
     {
@@ -55,7 +55,7 @@ global.users =[
         address: "Rua, 525",
         email: "Val@disney.com",
         age: 32,
-        height: 1.70,
+        height: "1.70m",
         vote: true
     },
 ];

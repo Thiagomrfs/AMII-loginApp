@@ -41,6 +41,8 @@ function addUser() {
     data.address = document.querySelector("#userAddress").value;
     data.age = document.querySelector("#userAge").value;
     data.height = document.querySelector("#userHeight").value;
+    data.height = Number(data.height).toFixed(2);
+    data.height += "m";
     data.vote = document.querySelector("#userVote").checked;
     data.vote = data.vote.toString();
 
