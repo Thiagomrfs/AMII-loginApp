@@ -48,7 +48,9 @@ function addUser() {
     data.age = document.querySelector("#userAge").value;
     data.height = document.querySelector("#userHeight").value;
     data.vote = document.querySelector("#userVote").checked;
-    data.vote = data.vote.toString();
+    
+    if (data.vote) data.vote = "Sim";
+    else data.vote = "Não";
 
     for (const key in data) {
         if (data[key] == "") {
@@ -73,7 +75,7 @@ function addUser() {
     }
 }
 
-async function list() {
+function list() {
     const http = new XMLHttpRequest();
 
     http.open("GET", "/cadastro/list", true);
@@ -83,6 +85,7 @@ async function list() {
     http.onreadystatechange = (e)=>{
         if (http.readyState === 4 && http.status === 200) {
             console.log(JSON.parse(http.responseText));
+            alert("Verifique o console...")
         }
     }
 }

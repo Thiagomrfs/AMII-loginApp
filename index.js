@@ -16,7 +16,7 @@ global.users =[
         email: "Thiago@thiago.com",
         age: 18,
         height: "1.86m",
-        vote: true
+        vote: "Sim"
     },
     {
         name: "Rodrigo Rodolfo Silva Brito",
@@ -24,7 +24,7 @@ global.users =[
         email: "Rodolfo@virtual.ufc.br",
         age: 59,
         height: "1.70m",
-        vote:true
+        vote:"Sim"
     },
     {
         name: "Valdisney Sampaio Moreira",
@@ -32,7 +32,7 @@ global.users =[
         email: "Val@disney.com",
         age: 32,
         height: "1.70m",
-        vote: true
+        vote: "Sim"
     },
     {
         name: "Valdisney Sampaio Vieira",
@@ -40,7 +40,7 @@ global.users =[
         email: "Val@disney.com",
         age: 15,
         height: "1.70m",
-        vote: false
+        vote: "Não"
     },
     {
         name: "Valdisney Silva Moreira",
@@ -48,7 +48,7 @@ global.users =[
         email: "Val@disney.com",
         age: 32,
         height: "1.70m",
-        vote: true
+        vote: "Sim"
     },
     {
         name: "Valdisney Carvalho Moreira",
@@ -56,7 +56,7 @@ global.users =[
         email: "Val@disney.com",
         age: 32,
         height: "1.70m",
-        vote: true
+        vote: "Sim"
     },
 ];
 
