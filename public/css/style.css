@@ -20,12 +20,6 @@ body {
     margin-top: 2rem;
 }
 
-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100vw;
-}
-
 .add-form {
     display: flex;
     flex-direction: column;
@@ -43,4 +37,10 @@ footer {
 
 .add-form-buttons #add-form-submit {
     margin-right: 1.5rem;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
 }
