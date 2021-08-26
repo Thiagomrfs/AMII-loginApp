@@ -37,7 +37,7 @@ router.post('/cadastro/update',(req,res)=>{
 });
 
 router.get('/cadastro/list',(req,res)=>{
-    res.send("lista");
+    res.send(users);
 });
 
 router.post('/cadastro/addUser',(req,res)=>{

@@ -1,6 +1,7 @@
 function showAddUserForm() {
     let form = document.querySelector(".add-form");
     let summon = document.querySelector("#add-form-call");
+    let list = document.querySelector("#list-call");
     let buttons = document.querySelector(".add-form-buttons");
 
     for (item of form.children) {
@@ -12,12 +13,15 @@ function showAddUserForm() {
         item.classList.remove("hidden");
     }
 
+    list.classList.add("hidden")
+
     summon.classList.add("hidden");
 }
 
 function hideAddUserForm() {
     let form = document.querySelector(".add-form");
     let summon = document.querySelector("#add-form-call");
+    let list = document.querySelector("#list-call");
     let buttons = document.querySelector(".add-form-buttons");
 
     for (item of form.children) {
@@ -27,6 +31,8 @@ function hideAddUserForm() {
     for (item of buttons.children) {
         item.classList.add("hidden");
     }
+
+    list.classList.remove("hidden")
 
     summon.classList.remove("hidden");
 }
@@ -67,8 +73,18 @@ function addUser() {
     }
 }
 
-function list() {
+async function list() {
+    const http = new XMLHttpRequest();
 
+    http.open("GET", "/cadastro/list", true);
+    http.setRequestHeader('Content-Type','application/json');
+    http.send(null);
+
+    http.onreadystatechange = (e)=>{
+        if (http.readyState === 4 && http.status === 200) {
+            console.log(JSON.parse(http.responseText));
+        }
+    }
 }
 
 function update(index,link){
