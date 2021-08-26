@@ -41,14 +41,12 @@ function addUser() {
     data.address = document.querySelector("#userAddress").value;
     data.age = document.querySelector("#userAge").value;
     data.height = document.querySelector("#userHeight").value;
-    data.height = Number(data.height).toFixed(2);
-    data.height += "m";
     data.vote = document.querySelector("#userVote").checked;
     data.vote = data.vote.toString();
 
     for (const key in data) {
         if (data[key] == "") {
-            document.location.reload();
+            alert("Por favor certifique-se de preencher todos os dados.")
             return
         }
     }
@@ -60,11 +58,13 @@ function addUser() {
 
     http.onreadystatechange = (e)=>{
         if (http.readyState === 4 && http.status === 200) {
-            console.log(http.responseText);
+            alert("Usuário criado com sucesso!");
+            document.location.reload();
+        }
+        else if (http.readyState === 4 && http.status === 400) {
+            alert("Por favor verifique se os dados estão corretos.");
         }
     }
-
-    document.location.reload();
 }
 
 function list() {
