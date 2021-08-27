@@ -80,7 +80,7 @@ function list() {
 
     http.open("GET", "/cadastro/list", true);
     http.setRequestHeader('Content-Type','application/json');
-    http.send(null);
+    http.send();
 
     http.onreadystatechange = (e)=>{
         if (http.readyState === 4 && http.status === 200) {
