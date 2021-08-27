@@ -84,8 +84,7 @@ function list() {
 
     http.onreadystatechange = (e)=>{
         if (http.readyState === 4 && http.status === 200) {
-            console.log(JSON.parse(http.responseText));
-            alert("Verifique o console...")
+            console.log(http.responseText);
         }
     }
 }
@@ -170,9 +169,12 @@ function update(index,link){
         http.onreadystatechange = (e)=>{
             if (http.readyState === 4 && http.status === 200) {
                 console.log(http.responseText);
+                document.location.reload();
+            }
+            if (http.readyState === 4 && http.status === 400) {
+                alert("Por favor verifique os dados e tente novamente.");
             }
         }
-        document.location.reload();
     });  
 
 }
