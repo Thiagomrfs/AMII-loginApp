@@ -85,7 +85,29 @@ function list() {
     http.onreadystatechange = (e)=>{
         if (http.readyState === 4 && http.status === 200) {
             console.log(http.responseText);
+            createTable(JSON.parse(http.responseText));
         }
+    }
+}
+
+function createTable(data){
+    let table = document.querySelector("#list");
+    let button = document.querySelector("#list-call");
+    let body = table.querySelector("tbody");
+
+    table.classList.remove("hidden");
+    button.classList.add("hidden");
+
+    for (var i = 0; i < data.length; ++i) {
+        keys = Object.keys(data[i]);
+        var row = document.createElement('tr');
+        
+        for (var j=0;j<6;j++){
+            var newCell =  row.insertCell(j);
+            newCell.innerHTML = '<span>'+data[i][keys[j]]+'</span>';
+        }
+
+        body.appendChild(row);
     }
 }
 

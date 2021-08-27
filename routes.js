@@ -12,7 +12,7 @@ router.get('/about',(req,res)=>{
 });
 
 router.get('/cadastro',(req,res)=>{ 
-    res.render('pages/cadastro',{users:users}); 
+    res.render('pages/cadastro',{users:users.slice(-3)}); 
 });
 
 router.post('/cadastro/remove',(req,res)=>{
