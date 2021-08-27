@@ -39,8 +39,14 @@ body {
     margin-right: 1.5rem;
 }
 
+.list-header {
+    display: flex;
+    align-items: center;
+    margin-top: 4rem;
+}
+
 #list-call {
-    margin-left: 5rem;
+    margin-left: 1rem;
 }
 
 footer {

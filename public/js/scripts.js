@@ -39,7 +39,7 @@ function hideAddUserForm() {
 
 function addUser() {
     const http = new XMLHttpRequest();
-    let data = {name:"",email:"",address:"",age:"",height:"",vote:""};
+    let data = {name:"", email:"", address:"", age:"", height:"", vote:""};
 
     
     data.name = document.querySelector("#userName").value;
@@ -102,7 +102,7 @@ function createTable(data){
         keys = Object.keys(data[i]);
         var row = document.createElement('tr');
         
-        for (var j=0;j<6;j++){
+        for (var j=0; j < 6; j++){
             var newCell =  row.insertCell(j);
             newCell.innerHTML = '<span>'+data[i][keys[j]]+'</span>';
         }

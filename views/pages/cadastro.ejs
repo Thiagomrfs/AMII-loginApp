@@ -5,17 +5,17 @@
     <p>Lista dos novos usuários cadastrados no sistema.</p>
     <div class="add-form" class="hidden">
         <label for="userName" class="hidden">Nome</label>
-        <input type="text" id="userName" placeholder="nome" class="hidden">
+        <input type="text" id="userName" placeholder="Nome sobrenome" class="hidden">
         <label for="userEmail" class="hidden">Email</label>
-        <input type="email" id="userEmail" placeholder="email" class="hidden">
+        <input type="email" id="userEmail" placeholder="Email@dominio.com" class="hidden">
         <label for="userAddress" class="hidden">Endereço</label>
-        <input type="text" id="userAddress" placeholder="endereço" class="hidden">
+        <input type="text" id="userAddress" placeholder="Rua, numero" class="hidden">
         <label for="userAge" class="hidden">Idade</label>
-        <input type="number" id="userAge" min="1" placeholder="idade" class="hidden">
+        <input type="number" id="userAge" min="1" placeholder="Idade" class="hidden">
         <label for="userHeight" class="hidden">Altura (metros)</label>
-        <input type="number" id="userHeight" placeholder="altura" class="hidden" min="1" step="0.01">
+        <input type="number" id="userHeight" placeholder="Altura" class="hidden" min="1" step="0.01">
         <label for="userVote" class="hidden">Vota?</label>
-        <input type="checkbox" id="userVote" placeholder="vota" class="hidden">
+        <input type="checkbox" id="userVote" placeholder="Vota" class="hidden">
     </div>
     <div class="add-form-buttons" class="hidden">
         <a href="#" onclick="addUser()" class="hidden" id="add-form-submit">Adicionar</a>
@@ -91,16 +91,16 @@
 
     <div class="list-header">
         <h2>Todos os usuários</h2>
-        <a href="#" onclick="list()" id="list-call">Listar</a>
+        <a href="#" onclick="list()" id="list-call">Mostrar lista</a>
     </div>
     <table class="table table-hover hidden" id="list">
         <thead>
         <tr>
             <th>Nome</th>
-            <th>Endereço</th>
             <th>Email</th>
-            <th>Idade</th>
+            <th>Endereço</th>
             <th>Altura</th>
+            <th>Idade</th>
             <th>Vota?</th>
         </tr>
         </thead>

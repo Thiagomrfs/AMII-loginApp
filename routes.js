@@ -12,7 +12,7 @@ router.get('/about',(req,res)=>{
 });
 
 router.get('/cadastro',(req,res)=>{ 
-    res.render('pages/cadastro',{users:users.slice(-3)}); 
+    res.render('pages/cadastro',{users: users.slice(-3).reverse()}); 
 });
 
 router.post('/cadastro/remove',(req,res)=>{
@@ -78,8 +78,14 @@ router.post('/cadastro/addUser',(req,res)=>{
     user.vote = req.body.vote;
 
     const emailRegex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    const addressRegex = /([a-zA-Z])\w+,*([a-zA-Z])\w+/
 
     if (!emailRegex.test(user.email)) {
+        res.sendStatus(400);
+        return
+    }
+
+    if (!addressRegex.test(user.address)) {
         res.sendStatus(400);
         return
     }

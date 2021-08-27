@@ -12,50 +12,50 @@ const address = "localhost";
 global.users =[
     {
         name: "Thiago Marinho d. Farias",
-        address: "Rua prepexes, 123",
         email: "Thiago@thiago.com",
-        age: 18,
+        address: "Rua prepexes, 123",
         height: "1.86m",
+        age: 18,
         vote: "Sim"
     },
     {
         name: "Rodrigo Rodolfo Silva Brito",
-        address: "Rua pé de pé, 321",
         email: "Rodolfo@virtual.ufc.br",
-        age: 59,
+        address: "Rua pé de pé, 321",
         height: "1.70m",
+        age: 59,
         vote:"Sim"
     },
     {
         name: "Valdisney Sampaio Moreira",
-        address: "Rua, 525",
         email: "Val@disney.com",
-        age: 32,
+        address: "Rua, 525",
         height: "1.70m",
+        age: 32,
         vote: "Sim"
     },
     {
         name: "Valdisney Sampaio Vieira",
-        address: "Rua, 525",
         email: "Val@disney.com",
-        age: 15,
+        address: "Rua, 525",
         height: "1.70m",
+        age: 15,
         vote: "Não"
     },
     {
         name: "Valdisney Silva Moreira",
-        address: "Rua, 525",
         email: "Val@disney.com",
-        age: 32,
+        address: "Rua, 525",
         height: "1.70m",
+        age: 32,
         vote: "Sim"
     },
     {
         name: "Valdisney Carvalho Moreira",
-        address: "Rua, 525",
         email: "Val@disney.com",
-        age: 32,
+        address: "Rua, 525",
         height: "1.70m",
+        age: 32,
         vote: "Sim"
     },
 ];
